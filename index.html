@@ -49,6 +49,21 @@
       text-transform: uppercase;
       color: var(--muted);
     }
+    .credit {
+      position: fixed;
+      left: 0; right: 0; bottom: 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--muted);
+    }
+    .credit a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 1px;
+    }
+    .credit a:hover { color: var(--ink); }
   </style>
 </head>
 <body>
@@ -57,5 +72,6 @@
     <p class="concept">A Completely Unnecessary Concept</p>
     <p class="status">Under Completely Unnecessary Construction</p>
   </main>
+  <p class="credit">a <a href="https://rick-west.com">primalbeet</a> operation</p>
 </body>
 </html>
