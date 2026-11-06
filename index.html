@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Next Fool City</title>
+  <meta name="description" content="Next Fool City — A Completely Unnecessary Concept. Under Completely Unnecessary Construction.">
+  <style>
+    :root {
+      --bg: #f6f1e7;
+      --ink: #1d1b18;
+      --muted: #6b645a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16140f;
+        --ink: #efe8da;
+        --muted: #a39a8b;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px 16px;
+    }
+    main { max-width: 640px; }
+    h1 {
+      font-size: clamp(2.2rem, 8vw, 4rem);
+      font-weight: normal;
+      letter-spacing: 0.01em;
+      line-height: 1.1;
+    }
+    .concept {
+      margin-top: 0.9rem;
+      font-size: clamp(1.05rem, 3.5vw, 1.35rem);
+      font-style: italic;
+    }
+    .status {
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Next Fool City</h1>
+    <p class="concept">A Completely Unnecessary Concept</p>
+    <p class="status">Under Completely Unnecessary Construction</p>
+  </main>
+</body>
+</html>
