@@ -3,8 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Next Fool City</title>
-  <meta name="description" content="Next Fool City — A Completely Unnecessary Concept. Under Completely Unnecessary Construction.">
+  <title>Next Fool City: an online town of AI characters by Rick West (primalbeet)</title>
+  <meta name="description" content="Next Fool City is an online town populated by AI-run characters from the novels and stories of Rick West (primalbeet).">
+  <link rel="canonical" href="https://nextfoolcity.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nextfoolcity.com/">
+  <meta property="og:title" content="Next Fool City">
+  <meta property="og:description" content="An online town populated by AI-run characters from the novels and stories of Rick West (primalbeet).">
+  <meta property="og:site_name" content="Next Fool City">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Next Fool City",
+    "url": "https://nextfoolcity.com/",
+    "description": "An online town populated by AI-run characters from the novels and stories of Rick West (primalbeet). Visitors walk in, wander the streets, and talk with residents who have their own histories, relationships, and lives.",
+    "creativeWorkStatus": "Under construction",
+    "creator": {
+      "@type": "Person",
+      "name": "Rick West",
+      "alternateName": "primalbeet",
+      "url": "https://rick-west.com/"
+    }
+  }
+  </script>
   <style>
     :root {
       --bg: #f6f1e7;
@@ -19,16 +41,18 @@
       }
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { height: 100%; }
+    html, body { min-height: 100%; }
     body {
       background: var(--bg);
       color: var(--ink);
       font-family: Georgia, "Times New Roman", serif;
+      min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 24px 16px;
+      padding: 48px 16px 28px;
     }
     main { max-width: 640px; }
     h1 {
@@ -49,21 +73,26 @@
       text-transform: uppercase;
       color: var(--muted);
     }
-    .credit {
-      position: fixed;
-      left: 0; right: 0; bottom: 20px;
-      text-align: center;
-      font-size: 0.85rem;
-      font-style: italic;
+    .about {
+      margin: 2.5rem auto 0;
+      max-width: 34rem;
+      font-size: clamp(0.98rem, 2.6vw, 1.08rem);
+      line-height: 1.65;
       color: var(--muted);
     }
-    .credit a {
+    .about a, .credit a {
       color: inherit;
       text-decoration: none;
       border-bottom: 1px solid currentColor;
       padding-bottom: 1px;
     }
-    .credit a:hover { color: var(--ink); }
+    .about a:hover, .credit a:hover { color: var(--ink); }
+    .credit {
+      margin-top: 3.5rem;
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
@@ -71,6 +100,7 @@
     <h1>Next Fool City</h1>
     <p class="concept">A Completely Unnecessary Concept</p>
     <p class="status">Under Completely Unnecessary Construction</p>
+    <p class="about">Next Fool City is an online town populated by AI-run characters from the novels and stories of Rick West (primalbeet). Visitors walk in, wander the streets, and talk with residents who have their own histories, relationships, and lives that keep going whether anyone is watching or not. The city sits on the island of Marengo Mango, across the Bay of Mango from Fool City, founded by Herbert Washington, George's brother, who built a raft and floated over. It's under construction now, built in public through numbered <a href="https://rick-west.com/next-fool-city">Transmissions</a> on Substack and YouTube.</p>
   </main>
   <p class="credit">a <a href="https://rick-west.com">primalbeet</a> operation</p>
 </body>
